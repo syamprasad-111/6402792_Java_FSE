@@ -1,0 +1,24 @@
+Ecommerce Searching – Linear vs Binary Search on Product Data
+
+Description
+Implements both linear and binary search algorithms on a product dataset, each product having a productId, productName, and category. Demonstrates search efficiency and suitability for e-commerce platforms.
+
+Files
+Product.java – Represents product attributes
+Test.java – Main class using Scanner for input and runs both search methods
+
+Time Complexity Comparison:
+| Search Type      | Best Case | Average Case  | Worst Case  |
+|------------------|-----------|---------------|-------------|
+| Linear Search    | O(1)      | O(n)          | O(n)        |
+| Binary Search    | O(1)      | O(log n)      | O(log n)    |
+
+Linear Search: Good for unsorted or small datasets.
+Binary Search: Fast and scalable for sorted arrays.
+
+Recommendation for E-Commerce Systems
+Linear Search : For small or unsorted product lists
+Binary Search : For sorted arrays and performance-critical search and When data is mostly static(read-heavy).
+For large dynamic datasets, prefer:
+->HashMap for O(1) lookup.
+->Search trees / Tries for text-based queries.

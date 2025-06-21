@@ -1,0 +1,23 @@
+Financial Forecasting – Using Recursion
+
+Description:
+Predicts future investment value based on a constant annual growth rate using recursive algorithms. Demonstrates both basic recursion and an optimized memoized version.
+
+Files:
+FinanceForecast.java – Basic recursive implementation
+FinanceForecastOptimized.java – Optimized version using memorization i.e a hash map.
+
+Time & Space Complexity:
+| Implementation       | Time Complexity  |  Space Complexity  |
+|----------------------|------------------|--------------------|
+| Basic Recursion      | O(n)             | O(n) (stack calls) |
+| Memoized Recursion   | O(n)             | O(n) (cached calls)|
+
+n = number of years of forecast
+
+Optimization Strategies:
+1. Memoization
+Store previously computed values in a map to avoid redundant recursive calls.
+
+2. Iteration
+Convert recursion into a loop to eliminate stack usage — ideal for large year ranges.
